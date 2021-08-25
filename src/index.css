@@ -5,9 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://cdn.dribbble.com/users/4874/screenshots/2087133/pokebiome004_gif.gif");
+  background-color: #cccccc;
+  background-size:contain;
+  background-position:center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pokemonCard{
+  /* backdrop-filter: blur(5px); */
+}
+
+.pokemon {
+  width: 130px ;
+  height: 130px;
+}
+
+h2 {
+  text-transform: capitalize;
+  color:#000 ;
+  text-shadow: 0 0 4px #fff;
+}
+
+::placeholder {
+  color: black;
+  text-shadow: 0 0 4px #fff;
+}
+
+input {
+  outline:transparent;
+  text-shadow: 0 0 4px #fff;
+}
+
+p {
+  color:#000 ;
+  text-shadow: 0 0 4px #fff;
+  font-weight: bold;
 }
