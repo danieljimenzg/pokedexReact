@@ -41,8 +41,62 @@ input {
   text-shadow: 0 0 4px #fff;
 }
 
-p {
+p, .cardTop {
+  text-transform: capitalize;
   color:#000 ;
   text-shadow: 0 0 4px #fff;
   font-weight: bold;
+}
+
+.cardTop{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.nId {
+  margin-right: 6px;
+}
+
+.tipo {
+  display: inline;
+  text-transform: capitalize;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.heart {
+  font-size: 25px;
+  text-align: right;
+
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTypesDiv {
+  display:inline-flex;
+  justify-content:space-evenly;
+  text-align: center;
+}
+
+.cardTypes {
+  width: 60px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1.5;
 }
