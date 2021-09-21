@@ -1,0 +1,388 @@
+/* Pokeball Loader */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+#top1 {
+  transform-origin: bottom center;
+  animation: move_top1 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_top1 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1.5%, -25%) scale(1.3) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+#top2 {
+  transform-origin: bottom left;
+  animation: move_top2 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_top2 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-10%, 1%) scale(1.1) rotate(-2.1deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+#bottom1 {
+  transform-origin: top center;
+  animation: move_bottom1 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_bottom1 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(0%, 45%) scale(1.3) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+#bottom2 {
+  transform-origin: top left;
+  animation: move_bottom2 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_bottom2 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(38%, 1%) scale(1.3) rotate(-3.5deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+#bottom3 {
+  transform-origin: top right;
+  animation: move_bottom3 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_bottom3 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(12%, 5%) scale(1.1) rotate(-1deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+#bottom4 {
+  transform-origin: top left;
+  animation: move_bottom4 ease-out 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move_bottom4 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translate(-12%, 5%) scale(1.1) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+}
+
+svg {
+  width: 300px;
+  animation: animationFrames ease-in-out 1.2s;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+
+/* Circle Rulers
+.centerWrapper:before {
+  display: block;
+  content: '';
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centerWrapper:after {
+  display: block;
+  content: '';
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
+/* Pokeball Loader end */
+
+/* Text Carrousel */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+ .wordCarousel {
+	 font-size: 1.6rem;
+	 font-weight: 100;
+	 color: black;
+   background: rgba(255, 255, 255, 0.65);
+   border: solid;
+   border-radius: 50px;
+  
+  }
+ .wordCarousel div {
+	 overflow: hidden;
+	 position: relative;
+	 height: 5rem;
+	 padding-top: 10px;
+	 margin-top: -10px;
+}
+ .wordCarousel div li {
+	 font-family: Serif;
+	 color: black;
+	 font-weight: 700;
+	 height: 2.9rem;
+	 margin-bottom: 45px;
+	 display: block;
+}
+
+
+ .flip2 {
+	 animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+ .flip3 {
+	 animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+ .flip4 {
+	 animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+ @keyframes flip2 {
+	 0% {
+		 margin-top: -180px;
+	}
+	 5% {
+		 margin-top: -90px;
+	}
+	 50% {
+		 margin-top: -90px;
+	}
+	 55% {
+		 margin-top: 0px;
+	}
+	 99.99% {
+		 margin-top: 0px;
+	}
+	 100% {
+		 margin-top: -270px;
+	}
+}
+ @keyframes flip3 {
+	 0% {
+		 margin-top: -270px;
+	}
+	 5% {
+		 margin-top: -180px;
+	}
+	 33% {
+		 margin-top: -180px;
+	}
+	 38% {
+		 margin-top: -90px;
+	}
+	 66% {
+		 margin-top: -90px;
+	}
+	 71% {
+		 margin-top: 0px;
+	}
+	 99.99% {
+		 margin-top: 0px;
+	}
+	 100% {
+		 margin-top: -270px;
+	}
+}
+ @keyframes flip4 {
+	 0% {
+		 margin-top: -360px;
+	}
+	 5% {
+		 margin-top: -270px;
+	}
+	 25% {
+		 margin-top: -270px;
+	}
+	 30% {
+		 margin-top: -180px;
+	}
+	 50% {
+		 margin-top: -180px;
+	}
+	 55% {
+		 margin-top: -90px;
+	}
+	 75% {
+		 margin-top: -90px;
+	}
+	 80% {
+		 margin-top: 0px;
+	}
+	 99.99% {
+		 margin-top: 0px;
+	}
+	 100% {
+		 margin-top: -270px;
+	}
+}
+ body, html {
+	 overflow: hidden;
+     text-shadow: 0 0 4px #fff;
+
+}
+ body {
+	 display: flex;
+	 justify-content: center;
+}
+ body::after {
+	 content: "";
+	 display: block;
+	 position:absolute;
+	 z-index: -1;
+	 transform: rotate(20deg);
+	 border-radius: 50%;
+}
+
+/* Text Carrousel */
+
+.pokes-loader{
+    height: 60px;
+    margin-bottom: -16px;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+ }
+}
+
+
+/* Small desktop */
+@media screen and (min-width: 200px) and (max-width:280px) {
+  .wordCarousel{
+    font-size: 1.6rem;
+  }
+}
+
+/* Small screen Phones */
+@media screen and (min-width: 360px) and (max-width:420px) {
+  .wordCarousel{
+    font-size: 1.5rem;
+    justify-content: center;
+    
+  }
+  .wordCarousel div{
+    height: 6rem;
+    margin-left: -2.5rem;
+  }
+  .wordCarousel div li{
+    height: 3rem;
+  }
+}
+
+/* iPhone X */
+@media screen and (min-width: 375px) and (max-width:812px){
+  .wordCarousel{
+    font-size: 1.6rem;
+  }
+  .wordCarousel div{
+    height: 6rem;
+    margin-left: -2.5rem;
+  }
+  .wordCarousel div li{
+    height: 3rem;
+  }
+}
+
+/* Pixel 2 & xl */
+@media screen and (min-width: 411px) and (max-width:420px){
+  .wordCarousel{
+    font-size: 1.7rem;
+  }
+  .wordCarousel div{
+    height: 6rem;
+    margin-left: -2.5rem;
+  }
+  .wordCarousel div li{
+    height: 2.9rem;
+  }
+}
+
+/* iPad */
+@media screen and (min-width: 715px) and (max-width:900px) {
+  .wordCarousel{
+    font-size: 2rem;
+  }
+}
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) and (max-width:1025px) {
+  .wordCarousel{
+    font-size: 2rem;
+  }
+}

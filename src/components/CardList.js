@@ -5,6 +5,7 @@ import typeColors from './typeColors'
 const CardList = ({pokemons}) => {
     return (
     <div>
+    <div className='pokemons-container'>
     {   //Aqui, mapeamos el array pokemons (que es pasado por parametro a este componente desde App.js). Este array lo obtenemos desde la funcion
         //Filtered Pokemons, tambien en App.js
         pokemons.map((pokemon, i ) => {
@@ -24,6 +25,8 @@ const CardList = ({pokemons}) => {
         )
     })
     }
+    
+    </div>
     </div>
     )
 }
