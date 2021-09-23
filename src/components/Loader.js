@@ -9,7 +9,7 @@ const Loader = ({src}) => {
 			</video>
         <div className='tc v-top'>
             <h1 className="wordCarousel">
-            <span>We are</span>
+            <p className='span'>We are</p>
             <div>
                 {/* Use classes 2,3, or 4 to match the number of words */}
                 <ul className="flip4">

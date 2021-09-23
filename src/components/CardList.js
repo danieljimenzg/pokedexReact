@@ -14,6 +14,11 @@ const CardList = ({pokemons}) => {
             key={pokemons[i].name} 
             id={pokemons[i].id} 
             name={pokemons[i].name}
+            life={pokemons[i].stats[0].base_stat}
+            attack={pokemons[i].stats[0].base_stat}
+            defense={pokemons[i].stats[0].base_stat}
+            height={pokemons[i].height}
+            weight={pokemons[i].weight}
             types={pokemons[i].types.map(type => { //Este map, sirve para poder darle un color determinado de background al tipo/tipos de cada uno
                                                    //de los pokemons. 
                 return (

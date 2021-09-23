@@ -176,6 +176,13 @@ svg {
 /* Pokeball Loader end */
 
 /* Text Carrousel */
+
+.span{
+  margin-top: 10px;
+  font-weight: unset;
+  margin-bottom: 0;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
  .wordCarousel {
 	 font-size: 1.6rem;
