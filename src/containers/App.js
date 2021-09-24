@@ -13,15 +13,13 @@ class App extends Component {
         this.state = {
             pokemons: [],
             searchfield: '',
-            source: ''
+            source: '',
+            nPokes: '151'
         }
     }
 
     //Funcion para que los caracteres tipeados en la barra de busqueda, se conviertan en el state 'searchfield'
-    onSearchChange = (event) =>{
-        this.setState({searchfield: event.target.value})
-        
-    }
+    onSearchChange = (event) => this.setState({searchfield: event.target.value})
 
     backgroundArray = [
         'https://i.imgur.com/TQW5VzG.mp4', 
@@ -34,10 +32,9 @@ class App extends Component {
     
 
     componentDidMount(){
-        let nPokes = 151; //Cantidad de pokemones a mostrar. Min 1, max 649
         const updatePokemon = async () => {
             let pokemon = []; // esto es para guardar todos los ids de los pokemons
-            for (let i=1; i<= nPokes; i++) {
+            for (let i=1; i<= this.state.nPokes; i++) {
               let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`);
               let info = await res.json();
               pokemon.push(info);
