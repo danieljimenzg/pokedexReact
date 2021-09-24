@@ -73,17 +73,26 @@ video {
 h2 {
   text-transform: capitalize;
   color:#000 ;
-  text-shadow: 0 0 4px #fff;
+    text-shadow: 0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px -0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    0.6px -0.6px 4px rgba(255, 255, 255, 0.7);
 }
 
 ::placeholder {
   color: black;
-  text-shadow: 0 0 4px #fff;
+    text-shadow: 0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px -0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    0.6px -0.6px 4px rgba(255, 255, 255, 0.7);
 }
 
 input {
   outline:transparent;
-  text-shadow: 0 0 4px #fff;
+    text-shadow: 0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px -0.6px 4px rgba(255, 255, 255, 0.7), 
+    -0.6px 0.6px 4px rgba(255, 255, 255, 0.7), 
+    0.6px -0.6px 4px rgba(255, 255, 255, 0.7);
 }
 
 .cardTopFront{
@@ -95,7 +104,10 @@ input {
 p, .cardTopFront {
   text-transform: capitalize;
   color:#000 ;
-  text-shadow: 0 0 4px #fff;
+  text-shadow: 0.6px 0.6px 6px #fff, 
+  -0.6px -0.6px 6px #fff, 
+  -0.6px 0.6px 6px #fff, 
+  0.6px -0.6px 6px #fff;
   font-weight: bold;
 }
 
@@ -166,8 +178,8 @@ p, .cardTopFront {
   justify-content: space-around;
   list-style: none;
   font-weight: bolder;
-  text-shadow: none;
-  margin-bottom: 10px;
+    text-shadow: 0.6px 0.6px 6px #fff, -0.6px -0.6px 6px #fff, -0.6px 0.6px 6px #fff, 0.6px -0.6px 6px #fff;
+-bottom: 10px;
 }
 
 .pokemonSize{
@@ -202,6 +214,7 @@ b{
 }
 
 .scroll{
+  /* border-top: solid #357edd; */
   overflow-y:auto;
   height: 53vh;
 }
